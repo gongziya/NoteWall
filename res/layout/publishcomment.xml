@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+         android:id="@+id/notewallTitle"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:background="@drawable/wood2">
+
+    <ImageView
+        android:id="@+id/buttonBack"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:src="@drawable/goback"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/buttonPublish"
+       android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sendnote"
+        android:layout_alignParentRight="true"/>
+    
+
+    <TextView
+        android:id="@+id/textPublish"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="50dp"
+        android:text="@string/labelcommenttitle"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:shadowColor="#0A0A0A"  
+        android:shadowDx="5"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        
+        />
+	</RelativeLayout>
+	<LinearLayout
+         android:id="@+id/notewallContent"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_below="@id/notewallTitle"
+         android:orientation="vertical" >
+    <EditText
+        android:id="@+id/ETPublish"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/buttonBack"
+        android:background="#ffFFFFFF"
+        android:textCursorDrawable="@null"
+        android:editable="true"
+        android:gravity="top"
+        android:hint="发表一下高见呗....."
+        android:textColor="#000000"
+        android:textColorHint="#E8E8E8" />
+    </LinearLayout>
+
+</RelativeLayout>

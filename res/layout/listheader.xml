@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1_0" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="#ffFFFFFF"
+		xmlns:android="http://schemas.android.com/apk/res/android" >
+		
+        <!--心情内容-->
+        <TextView android:id="@+id/author_content"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FF3B3B3B"
+        	android:textSize="18dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"        
+        	android:padding="7dp"
+        />
+ 		
+        <!--作者昵称-->
+    	<TextView android:id="@+id/author_name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FF63B8FF"
+        	android:textSize="14dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_below="@id/author_content"        
+        	android:padding="5dp"  />
+    </RelativeLayout>

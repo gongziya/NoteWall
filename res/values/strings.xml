@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, NoteWall1Activity!</string>
+    <string name="app_name">心情墙</string>
+    <string name="personId">个人帐号</string>
+    <string name="updatePassword">修改密码</string>
+    <string name="exitLogin">退出登录</string>
+    <string name="setTitle">个人中心</string>
+    <string name="loginUserNameLabel">帐号</string>
+    <string name="loginPasswordLabel">密码</string>
+    <string name="loginSubmit">登录</string>
+    <string name="loginRegister">注册</string>
+    <string name="loginTitle">登录</string>
+    <string name="loginRememberMe">记住我的帐号和密码</string>
+    <string name="MENU_EXIT">退出</string>
+    <string name="ok_label">确认</string>
+    <string name="userName_label">帐号</string>
+    <string name="sex_label">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="suggust_sexNotEmpty">性别不能为空</string>
+    <string name="password_lable">密码</string>
+    <string name="passwordConfirm_label">确认密码</string>
+    <string name="suggust_userName">用户名不能为空</string>
+    <string name="suggust_passwordNotEmpty">密码不能为空</string>
+    <string name="suggest_passwordNotSame">两次输入的密码不一致</string>
+    <string name="backLogin">回到登录</string>
+    <string name="version">当前版本</string>
+    <string name="suggest">意见反馈</string>
+    <string name="aboutUs">关于我们</string>
+    <string name="back">返回</string>
+    <string name="oldPassword">旧密码</string>
+	<string name="newPassword">新密码</string>
+	<string name="newPasswordConfirm">确认新密码</string>
+	<string name="cancle">取消</string>
+	<string name="label">发表心情(100)</string>
+	<string name="labelcommenttitle">发表评论(100)</string>
+    <string name="buttonBack">返回</string>
+    
+    <string name="buttonPublish">发表</string>
+	<string name="enter_main">赶紧体验</string>
+	<string name="newBtn">NEW BUTTON</string>
+	
+	<string name="action_settings">start</string>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent"   
+    android:background="@drawable/wall2"   
+    android:orientation="vertical" >   
+    
+   <RelativeLayout
+         android:id="@+id/notewallTitle"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:background="@drawable/wood2">
+    <ImageView 
+        android:id="@+id/btnGoBack"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:src="@drawable/goback"
+        android:layout_alignParentLeft="true"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="个人中心"
+        android:textSize="40dp"
+         android:shadowColor="#0A0A0A"  
+        android:shadowDx="5"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+    
+    
+    <!-- 表格布局 -->   
+    <TableLayout   
+        android:layout_width="fill_parent"   
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="50dp" 
+        android:padding="10dip" >   
+        <!-- 表格布局：第一行 -->   
+        <TableRow  
+            android:id= "@+id/tr_username"
+            android:clickable="true"
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"   
+            android:background="@drawable/shape_top_corner_no_bottom_line"   
+            android:padding="10dip" >   
+            <TextView   
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_marginRight="10dip"   
+                android:text="@string/personId" >   
+            </TextView>   
+            <TextView   
+                android:id="@+id/username"   
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_weight="1"   
+                android:gravity="center"
+                android:background="@null"   
+                android:singleLine="true" >   
+            </TextView> 
+            
+        </TableRow>   
+        <!-- 表格布局：第二行 -->   
+        <TableRow  
+            android:id="@+id/tr_updateSex"
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"   
+            android:background="@drawable/shape_no_corner_without_bottom"   
+            android:padding="10dip" >   
+            <TextView   
+                android:layout_width="fill_parent"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_marginRight="10dip"   
+                android:text="@string/sex_label" >   
+            </TextView>   
+            <TextView   
+                android:id="@+id/sex"   
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="right"   
+                android:gravity="right"
+                android:layout_weight="1"   
+                android:background="@null"   
+                android:singleLine="true" >   
+            </TextView> 
+            <TextView    
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_weight="1"   
+                android:gravity="right"
+                android:text=">"
+                android:background="@null"   
+                android:singleLine="true" >   
+            </TextView> 
+        </TableRow>   
+        <!-- 表格布局：第三行 -->   
+        <TableRow  
+            android:id="@+id/tr_updatePassword" 
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"   
+            android:background="@drawable/shape_bottom_corner_no_top_line"   
+            android:padding="10dip"
+            android:clickable="true" >   
+            <TextView   
+                android:id="@+id/updatePassword"
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_marginRight="10dip"  
+                
+                android:text="@string/updatePassword" >   
+            </TextView>   
+            <TextView    
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_weight="1"   
+                android:gravity="right"
+                android:text=">"
+                android:background="@null"   
+                android:singleLine="true" >   
+            </TextView> 
+               
+        </TableRow> 
+         
+    </TableLayout>   
+    
+     <!-- 表格布局 -->   
+    <TableLayout   
+        android:layout_width="fill_parent"   
+        android:layout_height="wrap_content"   
+        android:padding="10dip" >   
+        <!-- 表格布局：第一行 -->   
+        <TableRow 
+            android:id="@+id/tr_version"   
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content" 
+            android:clickable="true"  
+            android:background="@drawable/shape_top_corner_no_bottom_line"   
+            android:padding="10dip" >   
+            <TextView   
+                android:id="@+id/version"
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_marginRight="10dip"   
+                android:text="@string/version" >   
+            </TextView>  
+            <TextView    
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_weight="1"   
+                android:gravity="right"
+                android:text=">"
+                android:background="@null"   
+                android:singleLine="true" >   
+            </TextView>    
+        </TableRow>   
+        <!-- 表格布局：第二行 -->   
+        <TableRow  
+            android:id="@+id/tr_suggest" 
+            android:clickable="true" 
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"   
+            android:background="@drawable/shape_no_corner_without_bottom"   
+            android:padding="10dip" >   
+            <TextView  
+                android:id="@+id/suggest" 
+                android:layout_width="fill_parent"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_marginRight="10dip"   
+                android:text="@string/suggest" >   
+            </TextView>   
+             <TextView    
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_weight="1"   
+                android:gravity="right"
+                android:text=">"
+                android:background="@null"   
+                android:singleLine="true" >   
+            </TextView> 
+        </TableRow>   
+        <!-- 表格布局：第三行 -->   
+        <TableRow
+            android:id="@+id/tr_aboutUs"  
+            android:clickable="true"   
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"   
+            android:background="@drawable/shape_bottom_corner_no_top_line"   
+            android:padding="10dip" >   
+            <TextView 
+                android:id="@+id/aboutUs"  
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_marginRight="10dip"   
+                android:text="@string/aboutUs" >   
+            </TextView>   
+            <TextView    
+                android:layout_width="wrap_content"   
+                android:layout_height="wrap_content"   
+                android:layout_gravity="center_vertical"   
+                android:layout_weight="1"   
+                android:gravity="right"
+                android:text=">"
+                android:background="@null"   
+                android:singleLine="true" >   
+            </TextView>
+        </TableRow>   
+    </TableLayout>   
+    
+    <ImageView   
+        android:id="@+id/exitLogin"   
+        android:layout_width="fill_parent"   
+        android:layout_height="wrap_content"   
+        android:layout_gravity="bottom"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:src="@drawable/logout"
+         />   
+    
+</LinearLayout>  

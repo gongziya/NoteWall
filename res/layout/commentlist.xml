@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+         android:id="@+id/notewallTitle"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:background="@drawable/wood2">
+
+    <ImageView
+        android:id="@+id/buttonBack"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:src="@drawable/goback"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/buttonComments"
+       android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/newnote1"
+        android:layout_alignParentRight="true"/>
+    
+
+    <TextView
+        android:id="@+id/textPublish"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="50dp"
+        android:text="评论列表"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:shadowColor="#0A0A0A"  
+        android:shadowDx="5"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        
+        />
+	</RelativeLayout>
+	<LinearLayout
+         android:id="@+id/notewallContent"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_below="@id/notewallTitle"
+         android:orientation="vertical" >
+    <ListView 
+	    android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:background="#FFE0E0E0"
+        android:divider="#C7C7C7"
+        android:dividerHeight="1dp"
+        android:id="@id/android:list"/>>
+    </LinearLayout>
+
+</RelativeLayout>

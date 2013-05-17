@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFE0E0E0"
+    >
+ 
+ 
+    <!--评论人昵称-->
+    <TextView android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF63B8FF"
+        android:textSize="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"        
+        android:layout_marginTop="5dp" 
+        android:paddingLeft="4dp"
+        />
+ 
+    <!--评论时间-->
+    <TextView android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFB7B7B7"
+        android:textSize="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"        
+        android:layout_marginTop="5dp"
+        android:paddingRight="8dp"  />
+    
+    <!--评论内容-->
+    <TextView android:id="@+id/tv_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF3B3B3B"
+        android:textSize="15dp" 
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="8dp" />
+ 
+ 
+ 
+</RelativeLayout>
